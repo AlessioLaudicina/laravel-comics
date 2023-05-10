@@ -13,10 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('app');
+})->name('app');
+
+
+
+
 
 Route::get('/', function () {
-    $comics = config('comics.comics');
-    return view('comics', compact('comics'));
+    $comics = config('db.comics');
+    return view('partials.comics', compact('comics'));
 })->name('comics');
 
 

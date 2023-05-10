@@ -13,6 +13,8 @@
     <main>
         <div class="container">
         @yield('content')
+        @include('partials.comics')
+        
 
         </div>
 
