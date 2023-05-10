@@ -20,6 +20,7 @@
 
 
     @include('partials.footer')
+    @include('partials.footerBottom')
 
     
     

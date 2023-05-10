@@ -1,4 +1,4 @@
-<header>
+
 <header>
   <div class="logo">
     <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="Logo">
@@ -6,16 +6,23 @@
 
   <nav>
     <ul>
-      <li><a href="">characters</a></li>
-      <li><a href="">comics</a></li>
-      <li><a href="">movies</a></li>
-      <li><a href="">Tv</a></li>
+                <li> <a href="">CHARACTERS</a> </li>
+                <li> <a href="">COMICS</a> </li>
+                <li> <a href="">MOVIES</a> </li>
+                <li> <a href="">TV</a> </li>
+                <li> <a href="">GAMES</a> </li>
+                <li> <a href="">COLLECTTIONS</a> </li>
+                <li> <a href="">VIDEOS</a> </li>
+                <li> <a href="">FANS</a> </li>
+                <li> <a href="">NEWS</a> </li>
+                <li> <a href="">SHOP</a> </li>
      
     </ul>
   </nav>
-</header>
 
+
+
+</header>
 <div class="jumbotron">
   <img src="{{ Vite::asset('resources/images/jumbotron.jpg') }}" alt="jumbotron" />
 </div>
-</header>
