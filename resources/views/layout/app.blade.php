@@ -19,9 +19,15 @@
     </main>
 
 
+    <footer>
     @include('partials.footer')
     @include('partials.footerBottom')
 
+
+    </footer>
+
+
+    
     
     
 </body>
