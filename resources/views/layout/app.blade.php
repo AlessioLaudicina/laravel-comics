@@ -4,33 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('page-title')</title>
     @vite('resources/js/app.js')
+    <title>DC Comics</title>
 </head>
 <body>
-    @include('partials.header')
+       @include('partials.header')
 
-    <main>
+       <main>
         <div class="container">
-        @yield('content')
-        @include('partials.comics')
-        
-
+            @yield('content')
         </div>
 
-    </main>
+       </main>
 
 
-    <footer>
-    @include('partials.footer')
-    @include('partials.footerBottom')
+       <footer>
+       @include('partials.footer')
+        @include('partials.footerBottom')
 
+       </footer>
 
-    </footer>
+        
 
-
-    
-    
+       
     
 </body>
 </html>

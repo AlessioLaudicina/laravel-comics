@@ -1,12 +1,11 @@
-@extends('layouts.app')
-
+@extends ('layout.app')
 @section('content')
- <main>
+<main>
   <h2 class>Current series</h2>
   <div class="content">
    @foreach ($comics as $comic)
     <div class="card">
-     <a href="{{ route('comics') }}">
+     <a href="{{ route('home') }}">
       <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
       <h4>{{ $comic['title'] }}</h4>
      </a>
@@ -15,8 +14,5 @@
   </div>
   <button>Load more</button>
  </main>
-@endsection
 
-@section('title')
- comics
 @endsection

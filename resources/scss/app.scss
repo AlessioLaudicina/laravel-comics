@@ -10,6 +10,8 @@ body {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+// HEADER CSS
+
 header {
     line-height: 120px;
     display: flex;
@@ -66,6 +68,103 @@ header {
     margin: 0;
     background-size: contain;
 }
+
+// MAIN CSS
+main {
+    padding-bottom: 10px;
+    background-color: gray;
+    color: white;
+
+    h2 {
+        width: 215px;
+        transform: translateY(-50%);
+        margin-left: 6%;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        padding: 8px;
+        background-color: #0082f9;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    button {
+        margin: 0 auto;
+        display: block;
+        color: #0082f9;
+    }
+}
+
+
+.card {
+    position: relative;
+    width: calc(100% / 6);
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 10px;
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        width: 150px;
+        height: 200px;
+        transition: 0.5s all;
+        display: inline-block;
+    }
+
+    h4 {
+        width: 150px;
+        color: white;
+        font-size: 0.85rem;
+        padding: 5px 0;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    &:hover img {
+        filter: brightness(0.4);
+    }
+}
+
+.card-detail {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+
+    img {
+        width: 250px;
+        height: 400px;
+        transition: 0.5s all;
+        margin-bottom: 10px;
+    }
+
+    // &:hover img {
+    //     filter: brightness(0.8);
+    // }
+
+    h5 {
+        margin-bottom: 10px;
+    }
+
+
+    h4 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+
+
 
 
 
