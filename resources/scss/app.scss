@@ -72,15 +72,16 @@ header {
 // MAIN CSS
 main {
     padding-bottom: 10px;
-    background-color: gray;
-    color: white;
+    background-color: rgb(34, 33, 33);
+
+    height: 100%;
 
     h2 {
         width: 215px;
         transform: translateY(-50%);
         margin-left: 6%;
         text-align: center;
-        color: white;
+
         text-transform: uppercase;
         padding: 8px;
         background-color: #0082f9;
@@ -101,27 +102,27 @@ main {
 }
 
 
-.card {
+.my-card {
     position: relative;
     width: calc(100% / 6);
     cursor: pointer;
     display: inline-block;
     padding-bottom: 10px;
+    margin: 0 10px;
 
     a {
         text-decoration: none;
     }
 
     img {
-        width: 150px;
-        height: 200px;
+        width: 100%;
         transition: 0.5s all;
         display: inline-block;
     }
 
     h4 {
         width: 150px;
-        color: white;
+
         font-size: 0.85rem;
         padding: 5px 0;
         display: block;
@@ -163,6 +164,38 @@ main {
     }
 }
 
+// BLUE MENU BOX CSS
+.menu-box {
+    background-color: #0082f9;
+    overflow-y: auto;
+
+    .content {
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                display: flex;
+                align-items: center;
+                padding-left: 5px;
+                padding-right: 5px;
+
+                img {
+                    transform: scale(0.5);
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+
 
 
 
@@ -171,101 +204,126 @@ main {
 
 
 // FOOTER CSS
-footer {
+.footer-top {
     display: flex;
+    background-image: url('../images/footer-bg.jpg');
     background-size: cover;
-    background-color: #2f2f2f;
-    background-image: url(../images/footer-bg.jpg);
-    margin: 0 auto;
+
+    .content {
+        display: flex;
+        height: 370px;
+        background-image: url('../images/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
+
+        .cols {
+            padding-top: 30px;
+            margin-left: 50px;
+
+            h4 {
+                color: white;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 10px;
+                margin-left: 30px;
+            }
+
+            ul {
+                list-style: none;
+                padding-bottom: 20px;
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: lighten(rgb(34, 33, 33), 30%);
+                    font-size: .85em;
+
+
+                }
+            }
+        }
+    }
 
 }
 
-.content {
-    display: flex;
-    height: 370px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-}
+.footer-bottom {
+    height: 110px;
+    background-color: lighten(#1C1C1C, 8%);
 
-.cols {
-    padding-top: 30px;
-    margin-left: 50px;
-}
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
 
-h4 {
-    color: white;
+        &>h4 {
+            margin-left: 40px;
+            padding: 13px;
+            border: 2px solid #0082f9;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
 
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+        .follow-us {
+            display: flex;
 
-ul {
-    list-style: none;
-    padding-bottom: 20px;
-}
+            img {
+                margin: 0 7px;
+                cursor: pointer;
+            }
 
-a {
-    display: inline-block;
-    text-decoration: none;
-    color: gray;
-    font-size: .85em;
-}
+            &>h4 {
+                color: #0082f9;
+                margin-right: 30px;
+                padding-top: 5px;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                font-weight: 600;
 
-a:hover {
-    color: white;
+            }
+        }
+    }
 }
 
 // FOOTER BOTTOM CSS
 
 
-.content-footer {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-}
+.footer-bottom {
+    height: 110px;
+    background-color: lighten(#1C1C1C, 8%);
 
-button {
-    border: 1px solid #0082f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    height: 50px;
-    width: 150px;
-    margin-top: 30px;
-    margin-left: 30PX;
-    background-color: #2f2f2f;
-    color: white;
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
 
-}
+        &>h4 {
+            margin-left: 40px;
+            padding: 13px;
+            border: 2px solid #0082f9;
+            color: white;
+            text-transform: uppercase;
+        }
 
-button:hover {
-    background-color: #0082f9;
-}
+        .follow-us {
+            display: flex;
 
-h4 {
-    margin-left: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+            img {
+                margin: 0 7px;
+                cursor: pointer;
+            }
 
-.follow-us {
-    display: flex;
-    height: 100%;
-}
-
-.social {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-right: 85px;
-}
-
-.social li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 70px;
+            &>h4 {
+                color: #0082f9;
+                margin-right: 30px;
+                padding-top: 5px;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    }
 }

@@ -20,9 +20,19 @@
 
        <footer>
        @include('partials.footer')
-        @include('partials.footerBottom')
+       
+       @include('partials.footerBottom')
+
+       
+       
+       
+       
+
 
        </footer>
+     
+       
+       
 
         
 

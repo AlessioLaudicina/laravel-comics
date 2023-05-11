@@ -19,6 +19,13 @@ Route::get('/', function () {
     return view('partials.home', compact('comics'));
 })->name('home');
 
+Route::get('/comic-info/{id}', function ($id) {
+
+    $comics = config('db');
+
+    return view('comics_detail', compact('comics'));
+})->name('comics_detail');
+
 
 
 

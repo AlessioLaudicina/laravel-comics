@@ -4,8 +4,8 @@
   <h2 class>Current series</h2>
   <div class="content">
    @foreach ($comics as $comic)
-    <div class="card">
-     <a href="{{ route('home') }}">
+    <div class="my-card">
+     <a>
       <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
       <h4>{{ $comic['title'] }}</h4>
      </a>
